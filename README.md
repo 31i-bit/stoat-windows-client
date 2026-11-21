@@ -2,6 +2,20 @@
 
 **One client. Your server.**
 
+## ⬇️ WINDOWS DOWNLOAD / WINDOWS HERUNTERLADEN
+
+### [⬇️ WINDOWS-INSTALLER HERUNTERLADEN – VERSION 1.0.0 (.EXE)](https://github.com/31i-bit/stoat-windows-client/releases/download/community-v1.0.0/community-setup-win-x64.exe)
+
+**Windows 10/11 · 64 Bit (x64)**
+
+**Deutsch:** Herunterladen, installieren, Serveradresse einmal eingeben und loslegen. Kein GitHub-Konto erforderlich.
+
+**English:** Download, install, enter your server address once, and get started. No GitHub account required.
+
+[Weitere Downloads: Portable ZIP, Quellcode und Prüfsumme / Other downloads: Portable ZIP, source code and checksum](https://github.com/31i-bit/stoat-windows-client/releases/tag/community-v1.0.0)
+
+---
+
 ## Deutsch 🇩🇪
 
 Ein komfortabler Windows-Desktop-Client für **Stoat Retail und selbst gehostete Stoat-Server**.
@@ -43,13 +57,6 @@ The application is currently undergoing Microsoft's security review. Until that 
 
 The project is community-driven and not an official Stoat release. The source code of our modifications is not yet publicly available.
 
-
-
-### Download / Herunterladen
-
-Get the latest version from [GitHub Releases](https://github.com/31i-bit/stoat-windows-client/releases).
-
-**Platform:** Windows 10/11 · x64
 
 
 ## Screenshots / Bildschirmfotos
