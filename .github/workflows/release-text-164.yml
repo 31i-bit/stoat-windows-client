@@ -1,0 +1,68 @@
+name: Correct release text for build 164
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/release-text-164.yml'
+permissions:
+  contents: write
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update release description only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > "$RUNNER_TEMP/release-notes.md" <<'RELEASE_NOTES_EOF'
+          # WINDOWS-DOWNLOAD – INSTALLER
+          
+          **Für Windows 10 und Windows 11 (64 Bit)**
+          
+          ### [WINDOWS-INSTALLER HERUNTERLADEN (.EXE)](https://github.com/31i-bit/stoat-windows-client/releases/download/community-v1.0.0/community-setup-win-x64.exe)
+          
+          **Einmal installieren. Server verbinden. Einfach loslegen.**
+          
+          Kein GitHub-Konto und keine Entwicklungswerkzeuge erforderlich.
+          
+          ---
+          
+          ## Was bietet der CE Client?
+          
+          - Verbindung zu Stoat Retail und privaten Stoat-Servern
+          - Eigene Serveradresse einmal eingeben und dauerhaft speichern
+          - Einfacher Wechsel zwischen Retail und privatem Server
+          - Push-to-Talk (PTT) für Sprachchats
+          - Globale, einstellbare Tastenkombinationen
+          - Optionaler PTT-Helfer für Spiele mit besonderen Anforderungen an die Tastenerkennung
+          - Verbesserter Start auf selbst gehosteten Servern
+          
+          ## Weitere Downloads
+          
+          - [Portable Windows-Version herunterladen (ZIP)](https://github.com/31i-bit/stoat-windows-client/releases/download/community-v1.0.0/stoat-community-zip-windows-x64.zip)
+          - [Quellcode Build #164 – aktuelle Version (ZIP)](https://github.com/31i-bit/stoat-windows-client/releases/download/community-v1.0.0/stoat-community-v1.0.0-build164-source.zip)
+          - [Quellcode Build #163 – vorherige Version (ZIP)](https://github.com/31i-bit/stoat-windows-client/releases/download/community-v1.0.0/stoat-community-v1.0.0-build163-source.zip)
+          - [Build- und Quellcode-Zuordnung](https://github.com/31i-bit/stoat-windows-client/releases/download/community-v1.0.0/RELEASE-SOURCE.txt)
+          - [SHA-256-Prüfsumme des Windows-Installers](https://github.com/31i-bit/stoat-windows-client/releases/download/community-v1.0.0/community-setup-win-x64.exe.sha256)
+          
+          ## Optionaler PTT-Helfer
+          
+          Der separate PTT-Helfer ermöglicht die Erfassung von Tastatureingaben auch in Spielen mit besonderen Anforderungen an die Eingabeverarbeitung. Er wird nur auf ausdrücklichen Wunsch aktiviert und kann erhöhte Windows-Berechtigungen benötigen. Der CE Client ist auch ohne Helper nutzbar.
+          
+          ## Windows-Sicherheit
+          
+          Microsoft hat nach der bisherigen Rückmeldung keine grundsätzlichen Einwände gegen die Verwendung eines solchen Hilfsprogramms geäußert. Eine einzelne Erkennung durch Windows Defender wurde Microsoft zur Überprüfung vorgelegt. Abhängig von den Sicherheitseinstellungen können weiterhin Warnmeldungen auftreten. Dies stellt keine allgemeine Sicherheitsfreigabe durch Microsoft dar.
+          
+          ## Build #164 – 26.11.2026
+          
+          Überarbeitung der Produktdarstellung, Texte und visuellen Abgrenzung zum Ursprungsprojekt. Keine funktionalen Änderungen gegenüber Build #163.
+          
+          **Community Edition für Stoat by 31i-bit** ist ein unabhängiges Open-Source-Projekt unter der AGPLv3. Es ist kein offizieller Client des Stoat-Entwicklungsteams.
+          
+          **Projektwebsite:** https://31i-bit.github.io/stoat-community-client/
+          RELEASE_NOTES_EOF
+          gh release edit community-v1.0.0 --repo "$GITHUB_REPOSITORY" --notes-file "$RUNNER_TEMP/release-notes.md"
+          gh release view community-v1.0.0 --repo "$GITHUB_REPOSITORY" --json body --jq .body > "$RUNNER_TEMP/actual.md"
+          diff -Z "$RUNNER_TEMP/release-notes.md" "$RUNNER_TEMP/actual.md"
