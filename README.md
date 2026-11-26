@@ -1,4 +1,5 @@
-# 🐈‍⬛ Stoat Community Edition by 31i-bit
+# 🐈‍⬛ Community Edition für Stoat
+by 31i-bit
 
 **One client. Your server.**
 
@@ -18,7 +19,7 @@
 
 ## Deutsch 🇩🇪
 
-Ein komfortabler Windows-Desktop-Client für **Stoat Retail und selbst gehostete Stoat-Server**.
+Die Community Edition für Stoat ist ein unabhängiger Open-Source-Desktop-Client für Windows, der sowohl offizielle als auch private Stoat-Instanzen unterstützt.
 
 **Die zusätzlichen Funktionen stehen allen Nutzern zur Verfügung!**
 
@@ -29,17 +30,24 @@ Ein komfortabler Windows-Desktop-Client für **Stoat Retail und selbst gehostete
 - Benutzerfreundlicher Windows-Installer
 - Integrierte Updatefunktion
 
-**Unser Ziel:** Stoat nicht ersetzen, sondern die Desktop-Nutzung komfortabler machen.
+**Unser Ziel:** Die bestehende Stoat-Plattform durch zusätzlichen Bedienkomfort und erweiterte Desktop-Funktionen ergänzen.
 
-Ein Hinweis zur Windows-Sicherheit:
-Die Anwendung durchläuft derzeit die Sicherheitsüberprüfung durch Microsoft. Bis dieser Prozess abgeschlossen ist, können Windows Defender oder andere Sicherheitssoftware Warnmeldungen anzeigen – insbesondere im Hinblick auf den optionalen PTT-Helfer, der bei expliziter Aktivierung mit erweiterten Berechtigungen arbeitet.
+### Optionaler PTT-Helfer
 
-Das Projekt ist ein Community-Projekt und keine offizielle Veröffentlichung von Stoat. Der Quellcode unserer Modifikationen ist noch nicht öffentlich zugänglich.
+Der CE Client bietet einen separaten, optionalen PTT-Helfer, um Tastatureingaben auch in Spielen mit besonderen Anforderungen an die Eingabeerfassung zuverlässig zu erkennen. Er wird nur bei ausdrücklicher Aktivierung gestartet und kann erhöhte Windows-Berechtigungen benötigen. Der CE Client ist auch ohne Helper vollständig nutzbar.
+
+### Windows-Sicherheit
+
+Microsoft hat nach der bisherigen Rückmeldung keine grundsätzlichen Einwände gegen die Verwendung eines solchen Hilfsprogramms geäußert. Eine einzelne Erkennung durch Windows Defender wurde Microsoft zur Überprüfung vorgelegt. Abhängig von den Sicherheitseinstellungen können weiterhin Warnmeldungen auftreten. Dies stellt keine allgemeine Sicherheitsfreigabe durch Microsoft dar.
+
+### Über das Projekt
+
+Die Community Edition für Stoat ist ein unabhängiges Community-Projekt von 31i-bit und kein offizielles Produkt von Stoat. Das Projekt basiert auf dem Open-Source-Desktop-Client von Stoat und wird unter der AGPLv3 veröffentlicht. Der Quellcode steht im jeweiligen Release zum Download bereit.
 
 
 ## English 🇬🇧
 
-A more convenient Windows desktop client for **Stoat Retail and self-hosted Stoat servers**.
+Community Edition for Stoat is an independent, open-source Windows desktop client supporting both official and self-hosted Stoat instances.
 
 **All additional features work with both!**
 
@@ -50,12 +58,19 @@ A more convenient Windows desktop client for **Stoat Retail and self-hosted Stoa
 - User-friendly Windows installer
 - Built-in updater
 
-**Our goal:** Not to replace Stoat, but to make the desktop experience better.
+**Our goal:** To complement the existing Stoat platform with improved usability and additional desktop features.
 
-A note about Windows security:
-The application is currently undergoing Microsoft's security review. Until that process is complete, Windows Defender or other security software may display warnings, especially for the optional PTT helper, which uses elevated permissions when explicitly enabled.
+### Optional PTT helper
 
-The project is community-driven and not an official Stoat release. The source code of our modifications is not yet publicly available.
+The CE Client includes a separate, optional PTT helper designed to reliably capture keyboard input in games with special input capture requirements. It starts only when explicitly enabled and may require elevated Windows permissions. The CE Client remains fully usable without the helper.
+
+### Windows security
+
+Based on the feedback received so far, Microsoft has raised no fundamental objections to the use of such a helper. An individual Windows Defender detection has been submitted to Microsoft for review. Depending on security settings, warnings may still occur. This does not constitute a general security approval by Microsoft.
+
+### About the project
+
+Community Edition for Stoat is an independent community project by 31i-bit and is not an official Stoat product. It is based on the open-source Stoat desktop client and is released under the AGPLv3 license. Source code is available for download with the corresponding release.
 
 
 
