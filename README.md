@@ -96,4 +96,8 @@ Community Edition for Stoat is an independent community project by 31i-bit and i
 ### Windows installer / Windows-Installer
 
 ![Windows installer](images/installer.png)
+
+### System Tray Iconr / Funktionen
+
+![Windows installer](images/Systray&Functions.png)
   
